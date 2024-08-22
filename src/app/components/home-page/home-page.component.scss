@@ -1,0 +1,25 @@
+.clip-slant-left {
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+
+.clip-slant-right {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.section1 {
+  background-image: url("../../../assets/images/section1-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.eatingImg {
+  background-image: url("../../../assets/images/Social-Benefits-Co-Living.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.maps {
+  background-image: url("../../../assets/images/maps.png");
+  background-size: cover;
+  background-position: center;
+}

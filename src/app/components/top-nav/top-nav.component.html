@@ -1,0 +1,89 @@
+<div class="bg-[#fc353a] m-4 rounded-[3rem] pt-8 pb-16 px-20 space-y-14">
+  <mat-toolbar class="bg-transparent space-x-6">
+    <button class="text-white text-[2.5rem]">
+      <mat-icon class="text-[2.5rem]">menu</mat-icon>
+    </button>
+    <div
+      class="flex flex-col text-white font-bold text-[2.5rem] leading-7 ml-auto"
+    >
+      <span class="ml-3">Go</span>
+      <span>Grubz</span>
+    </div>
+    <span class="flex-grow"></span>
+    <span class="flex space-x-6 bg-slate-100/50 rounded-3xl p-1.5">
+      <button
+        class="text-base font-light text-white p-1 hover:bg-white hover:text-[#fc353a] rounded-3xl px-4"
+      >
+        Order
+      </button>
+      <button
+        class="text-base font-light text-white p-1 hover:bg-white hover:text-[#fc353a] rounded-3xl px-4"
+      >
+        Locations
+      </button>
+      <button
+        class="text-base font-light text-white p-1 hover:bg-white hover:text-[#fc353a] rounded-3xl px-4"
+      >
+        Contact Us
+      </button>
+      <button
+        class="text-base font-light text-white p-1 hover:bg-white hover:text-[#fc353a] rounded-3xl px-4"
+      >
+        About Us
+      </button>
+      <button
+        class="text-base font-light text-white p-1 hover:bg-white hover:text-[#fc353a] rounded-3xl px-4"
+      >
+        Add your restaurant
+      </button>
+    </span>
+    <span class="flex-grow"></span>
+    <span class="space-x-4">
+      <button
+        class="text-white hover:text-[#fc353a] bg-transparent hover:bg-white border border-white text-sm rounded-3xl py-2 px-6"
+      >
+        Sign Up
+      </button>
+      <button
+        class="text-white hover:text-[#fc353a] bg-transparent hover:bg-white border border-white text-sm rounded-3xl py-2 px-6"
+      >
+        Sign In
+      </button>
+    </span>
+  </mat-toolbar>
+  <div class="flex flex-row px-6">
+    <div class="flex-[6] flex flex-col gap-10">
+      <span class="text-8xl font-bold text-white mb-6 mt-12">
+        Why Go out when,<br />
+        you can Grubz in
+      </span>
+      <div
+        class="flex flex-row items-center bg-white rounded-3xl py-1 px-2 gap-5 w-[25rem]"
+      >
+        <mat-icon matPrefix class="-rotate-45">send</mat-icon>
+        <input
+          matInput
+          class="flex-grow border-0 focus:ring-0 focus:outline-none"
+          placeholder="Enter postcode or delivery address"
+        />
+        <button
+          matSuffix
+          class="bg-black text-white rounded-3xl rounded-3xl py-2 px-4 ml-auto"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        class="grid grid-cols-2 text-center justify-center text-white w-[25rem]"
+      >
+        <span class="col-span-1 font-bold text-4xl">{{ restaurants }}</span>
+        <span class="col-span-1 font-bold text-4xl">{{ users }}</span>
+        <span class="col-span-1 text-2xl">Restaurants</span>
+        <span class="col-span-1 text-2xl">Users</span>
+      </div>
+    </div>
+    <div class="flex-[4] flex items-center justify-center">
+      <img class="w-48 h-96" src="../../../assets/images/burger-3.png" alt="" />
+    </div>
+  </div>
+</div>

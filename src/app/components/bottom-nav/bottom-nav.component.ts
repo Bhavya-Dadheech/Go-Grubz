@@ -1,8 +1,4 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TopNavComponent } from './components/top-nav/top-nav.component';
-import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
-import { CommonModule } from '@angular/common'; // Import CommonModule instead of BrowserModule
+import { Component, OnInit } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,15 +7,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'app-root',
+  selector: 'app-bottom-nav',
+  templateUrl: './bottom-nav.component.html',
+  styleUrls: ['./bottom-nav.component.scss'],
   standalone: true,
   imports: [
-    RouterOutlet,
-    CommonModule,
-    TopNavComponent,
-    BottomNavComponent,
     MatDialogModule,
     MatRadioModule,
     MatSidenavModule,
@@ -28,10 +22,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
+    CommonModule,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'Go-Grubz';
+export class BottomNavComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
 }
